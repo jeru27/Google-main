@@ -14,7 +14,7 @@ html {
 a  {
     text-decoration: none;
     font-family: Arial, Sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     color: #000;
 }
 a:hover {
@@ -96,6 +96,7 @@ a:hover {
     ". search ."
     ". flexbox ."
 
+
 }
 
 #logo {
@@ -134,13 +135,25 @@ a:hover {
 #search:hover {
     box-shadow: 1px 1px 5px grey;
 }
+#search-buttons {
+    display: flex;
+    }
+
+.trending {
+    color: #1a0dab;
+    text-decoration: none;
+    position: center;
+    margin-left: 50px;
+    }
 
 #flexbox {
     display: flexbox;
     grid-area: flexbox;
     justify-self: center;
-
 }
+
+
+
 #google-search {
     border: none;
     background-color: #f8f9fa;
@@ -201,6 +214,11 @@ a:hover {
     grid-template-rows: 50px;
     grid-template-areas:
     "advertising business hsw .leaf cn. privacy terms settings";
+    background: #f2f2f2;
+    line-height: 40px;
+    min-width: 980px;
+    border-top: 1px solid #dadce0;
+    min-width: 400px;
 
 
 }
@@ -231,16 +249,17 @@ a:hover {
 }
 #leaf{
     grid-area: leaf;
-    justify-self:end;
+    justify-self:start;
     align-self: center;
-    margin-left: 85px;
+    margin-left: -35px;
+
 
 }
 #cn{
     grid-area: cn;
     justify-self:center;
     align-self: center;
-    margin-left: -25px;
+    margin-left: -150px;
     opacity: 0.75;
 }
 #privacy{
